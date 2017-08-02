@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AppSubsidioBasico</string>
+    <string name="dialog_pregunta">Que Deseas?</string>
+    <string name="seguir">Seguir</string>
+    <string name="cancel">Terminar</string>
+</resources>

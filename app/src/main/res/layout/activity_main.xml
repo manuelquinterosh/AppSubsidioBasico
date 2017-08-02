@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sv.com.manuelqh.appsubsidiobasico.MainActivity">
+
+    <TextView
+        android:id="@+id/BHij"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero de Hijos: "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nHijos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. Hijos"
+        android:layout_below="@id/BHij"
+    />
+
+    <TextView
+        android:id="@+id/BNhijoE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero de Hijos en Edad Escolar: "
+        android:textSize="20dp"
+        android:layout_below="@id/nHijos"/>
+
+    <EditText
+        android:id="@+id/nHijosEescolar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. En edad Escolar"
+        android:layout_below="@id/BNhijoE"/>
+
+    <Button
+        android:id="@+id/btnProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Process"
+        android:layout_below="@id/nHijosEescolar"/>
+
+    <RadioGroup
+        android:id="@+id/rGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/btnProcess">
+
+        <RadioButton
+            android:id="@+id/rViuda"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Viuda"
+            android:layout_below="@+id/btnProcess"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+        <RadioButton
+            android:id="@+id/rOtro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Otro"
+            android:layout_below="@+id/rViuda"/>
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txtTotalHijos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monto de Subsidio por Numero de Hijos"
+        android:layout_below="@+id/rGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/txtHijosEscolares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monto de Subsidio por hijos en edad Escolar"
+        android:layout_below="@id/txtTotalHijos"/>
+
+    <TextView
+        android:id="@+id/txtViudez"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="El Subsidio por Viudez"
+        android:layout_below="@id/txtHijosEscolares"/>
+
+    <TextView
+        android:id="@+id/txtSubsidioTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subsidio por viudez es"
+        android:layout_below="@+id/txtViudez"/>
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensaje"
+        android:layout_below="@+id/txtSubsidioTotal"
+        />
+
+</RelativeLayout>
